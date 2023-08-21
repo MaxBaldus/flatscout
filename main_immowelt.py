@@ -15,7 +15,7 @@ driver.get('https://signin.immowelt.de/?target=meinbereich&path=%2Fredirect')
 
 # enter login and handle cookies (nested shadow DOM elements)
 time.sleep(5) 
-# still MANUALLY 
+# still MANUALLY -> FIX 
 
 
 # log-in
@@ -29,12 +29,12 @@ pw_field.send_keys(pw)
 anmelden = driver.find_element(By.ID, 'signin-button').click()
 
 # go to saved searches
-# fix -> Gespeicherte Suchen
+# FIX -> Gespeicherte Suchen
 # search = driver.find_element(By.CLASS_NAME, 'udb_primaryLabel').click()
 time.sleep(20)
 
 # open saved search
-# fix -> Suche ausführen 
+# FIX -> Suche ausführen 
 # search = driver.find_element(By.CLASS_NAME, 'link link--primary')
 time.sleep(20)
 
