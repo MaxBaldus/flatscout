@@ -28,6 +28,10 @@ pw_field = driver.find_element(By.ID, 'password-input')
 pw_field.send_keys(pw)
 anmelden = driver.find_element(By.ID, 'signin-button').click()
 
+time.sleep(10)
+driver.maximize_window()
+
+
 # go to saved searches
 # fix -> Gespeicherte Suchen
 # search = driver.find_element(By.CLASS_NAME, 'udb_primaryLabel').click()
@@ -45,6 +49,8 @@ time.sleep(25)
 # contact button of first flat offer
 driver.switch_to.window(driver.window_handles[1]) # switch to new tab
 current_url = driver.current_url # save url
+
+print("blub")
 
 try:
     contact = driver.find_element(By.XPATH, '//*[@id="btnContactBroker"]/button/span')    
