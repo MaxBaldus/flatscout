@@ -19,18 +19,14 @@ time.sleep(5)
 
 
 # log-in
-mail = "maxbaldus@gmx.net"
-pw = "sojxen-qAftuf-caqfo6"
+mail = ""
+pw = ""
 
 login_field = driver.find_element(By.ID, 'user-name-input')
 login_field.send_keys(mail)
 pw_field = driver.find_element(By.ID, 'password-input')
 pw_field.send_keys(pw)
 anmelden = driver.find_element(By.ID, 'signin-button').click()
-
-time.sleep(10)
-driver.maximize_window()
-
 
 # go to saved searches
 # fix -> Gespeicherte Suchen
