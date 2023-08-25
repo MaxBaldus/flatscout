@@ -38,15 +38,15 @@ time.sleep(20)
 time.sleep(20)
 
 
-time.sleep(10)
-driver.maximize_window()
+#time.sleep(10)
+#driver.maximize_window()
 
 # open first offer
 try:
-    offer = driver.find_element(By.XPATH, '//*[@id="2brb95e"]').click()
+    offer = driver.find_element(By.CLASS_NAME, "EstateItem-4409d").click()
     time.sleep(15)
 except:
-    offer = driver.find_element(By.CLASS_NAME, "EstateItem-4409d").click()
+    offer = driver.find_element(By.XPATH, '//*[@id="2brb95e"]').click()
     time.sleep(15)
 
 
@@ -77,10 +77,10 @@ while 0 < a:
     driver.refresh() # refresh page
     time.sleep(10)
     try:
-        offer = driver.find_element(By.XPATH, '//*[@id="2brb95e"]').click()
+        offer = driver.find_element(By.CLASS_NAME, "EstateItem-4409d").click()
         time.sleep(10)
     except:
-        offer = driver.find_element(By.CLASS_NAME, "EstateItem-4409d").click()
+        offer = driver.find_element(By.XPATH, '//*[@id="2brb95e"]').click()
         time.sleep(10)
     
     # switch to new tab
