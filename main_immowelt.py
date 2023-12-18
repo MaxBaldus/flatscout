@@ -19,8 +19,8 @@ time.sleep(30)
 
 
 # log-in
-mail = "maxbaldus@gmx.net"
-pw = "sojxen-qAftuf-caqfo6"
+mail = ""
+pw = ""
 
 login_field = driver.find_element(By.ID, 'user-name-input')
 login_field.send_keys(mail)
